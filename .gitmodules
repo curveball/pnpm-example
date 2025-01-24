@@ -1,0 +1,3 @@
+[submodule "a12n-server"]
+	path = a12n-server
+	url = https://github.com/curveball/a12n-server.git

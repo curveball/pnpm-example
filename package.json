@@ -1,0 +1,21 @@
+{
+  "name": "pnpm-a12n-server-next",
+  "version": "1.0.0",
+  "description": "A sample pnpm workspace with a12n-server and Next.js app",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "pnpm run -r app:build",
+    "build:server": "pnpm run -r server:build",
+    "start": "concurrently \"pnpm start:app\" \"pnpm start:server\"",
+    "start:app": "pnpm -r app:dev",
+    "start:server": "pnpm run -r server:start",
+    "lint": "pnpm run -r server:fix && pnpm run -r app:lint"
+  },
+  "keywords": [],
+  "author": "usrrname",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "packageManager": "pnpm@9.15.4"
+}

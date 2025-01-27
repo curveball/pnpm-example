@@ -13,3 +13,7 @@ In separate Terminal tabs:
 `pnpm start:app` Next will open at `http://localhost:3000/`
 
 `pnpm lint` to lint all projects
+
+## Environment variables
+
+In `app/.env` set `NEXT_API_BASE_URL=http://localhost:8531/`

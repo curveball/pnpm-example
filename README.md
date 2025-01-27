@@ -6,5 +6,10 @@ This is a simple example of how to use `@curveball/a12n-server` with a Next.js p
 
 `pnpm install` to install dependencies.
 
-`pnpm start` to start server (will open at `http://localhost:8531/` and Next at `http://localhost:3000/`).
+In separate Terminal tabs:
 
+`pnpm start:server` to start server (will open at `http://localhost:8531/`) 
+
+`pnpm start:app` Next will open at `http://localhost:3000/`
+
+`pnpm lint` to lint all projects

@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "pnpm run -r app:build && pnpm run -r build",
-    "build:server": "pnpm run -r build",
-    "start": "concurrently \"pnpm start:app\" \"pnpm start\"",
     "start:app": "pnpm -r app:dev",
-    "start:server": "pnpm run -r start",
+    "start:server": "pnpm -r run start",
+    "build:server": "pnpm run -r build",
+    "build:app": "pnpm run -r app:build",
     "lint": "pnpm run -r fix && pnpm run -r app:lint"
   },
   "keywords": [],
